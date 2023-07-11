@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(welcome.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.welcome{
+    font-size:30px;
+    font-weight: 800;
+    color: rgb(102, 163, 241);
+    opacity: 1;
+}
+.next{
+    background-color: inherit;
+    width: 270px;
+    height: 35px;
+    border: none;
+    border-radius:5px;
+    box-shadow: 0px 0px 5px;
+    color: rgb(102, 163, 241);
+   font-size: 30px;
+    font-weight: 400;
+    
+
+
+}
+.next:hover{
+   background-color: teal;
+   color: white;
+  
+}
+.next:hover.welcome{
+    opacity:1;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <style>
+      body{
+        background: url(assets/images/weather.jpg)no-repeat center center/cover;
+        height: 100vh;
+      }
+      h1{
+         background-color: aquamarine;
+         border: solid aquamarine;
+         box-shadow: 0px 0px 5px;
+         text-align: center;
+         margin: 0;
+         border-radius:5px;
+      }
+
+    </style>
+
+<script>
+    (function(d, s, id) {
+        if (d.getElementById(id)) {
+            if (window.__TOMORROW__) {
+                window.__TOMORROW__.renderWidget();
+            }
+            return;
+        }
+        const fjs = d.getElementsByTagName(s)[0];
+        const js = d.createElement(s);
+        js.id = id;
+        js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+        fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'tomorrow-sdk');
+    </script>
+<h1>Weather News</h1>
+<br>
+<div id="ww_7df0853137b87" v='1.3' loc='id' a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":["wl4594"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://oneweather.org/archive/" id="ww_7df0853137b87_u" target="_blank">Weather history</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_7df0853137b87"></script>
+    <br>
+    <br>
+<div class="tomorrow"
+       data-location-id="131360,131339,131365,131358,131388,131372"
+       data-language="EN"
+       data-unit-system="METRIC"
+       data-skin="light"
+       data-widget-type="fire"
+       style="padding-bottom:22px;position:relative;"
+    >
+      <a
+        href="https://www.tomorrow.io/weather-api/"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+        style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+      >
+        <img
+          alt="Powered by the Tomorrow.io Weather API"
+          src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+          width="250"
+          height="18"
+        />
+      </a>
+    </div>
+<div>
+  <h2>What to Wear</h2>
+  <ul>
+    <li>Winter jacket: Less than 25 degrees.</li>
+    <hr>
+    <li>Light to medium coat: 25 to 44 degrees.</li>
+    <hr>
+    <li>Fleece: 45 to 64 degrees.</li>
+    <hr>
+    <li>Short sleeves: 65 to 79 degrees.</li>
+    <hr>
+    <li>Shorts: 80 degrees and above.</li>
+  </ul>
+</div>
+</html>

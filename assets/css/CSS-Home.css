@@ -1,0 +1,73 @@
+body{
+font-family:Poppins;
+background:rgb(248, 246, 242);
+background-blend-mode: color;
+backface-visibility:hidden ;
+}
+td{
+    height: 300px;
+    width:340px;
+    font-weight: 500;
+    font-size: small;
+    text-align:center ;
+
+}
+tr{
+    display: flex;
+    gap: 60px;
+}
+
+.menubar{
+    background:transparent;
+    height:60px;
+    width:100%;
+    font-size:40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px;
+}
+img{
+
+    width: 100%;
+    height: 80%;
+    border-radius: 0.2px;
+    box-shadow: 0px 0px 3px;
+
+}
+a{
+    color:rgb(162, 81, 194);
+    text-emphasis: none;
+    text-decoration:none;
+    cursor: pointer;
+}
+a:hover{
+    color: red;
+}
+.first-aid{
+
+}
+/* On screens that are 600px or less?*/
+@media screen and (max-width: 600px) {
+    body {
+      background: olive;
+    }
+    .menubar{
+        width: 250vw;
+    }
+    td{
+        height: 200px;
+        width:200px;
+        font-weight: 200;
+    
+    }
+    tr{
+        display: flex;
+        gap: 20px;
+    }
+}
+ul{
+    display: flex;
+}
+li{
+    width: 100%;
+    height: 60px;
+}
